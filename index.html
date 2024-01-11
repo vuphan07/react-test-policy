@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#2c7be5" />
+
+  <meta http-equiv="Content-Security-Policy" content="
+      style-src 'self' 'unsafe-inline' *.googleapis.com;
+      script-src 'self' *.stripe.com 'nonce-rAnd0m';
+      connect-src 'self' *.auth0.com *.amazonaws.com *.amazoncognito.com; 
+      frame-src 'self' *.stripe.com *.amazonaws.com *.auth0.com *.amazon.com; 
+      font-src 'self' data: https://fonts.gstatic.com; 
+      img-src 'self' data: *.com *.vn;
+      media-src 'self'; 
+      object-src 'self' ; 
+      manifest-src 'self' ; 
+      worker-src 'self' ; 
+      form-action 'self';" />
+
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Poppins:100,200,300,400,500,600,700,800,900&display=swap" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+
+  <title>MGTX管理画面</title>
+  <script nonce="rAnd0m">
+    window.global = window;
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="div" id="root"></div>
+  <script type="module" nonce="your-generated-nonce" src="/src/user.jsx"></script>
+</body>
+
+</html>
