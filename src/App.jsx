@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import { Stepper, Step } from 'react-form-stepper';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Stepper, Step } from "react-form-stepper";
 
 export default function App() {
   return (
@@ -24,7 +19,25 @@ export default function App() {
             </li>
           </ul>
         </nav>
-
+        <Stepper
+          steps={[
+            { label: "Personal details" },
+            { label: "Course details" },
+            { label: "Summary" },
+          ]}
+          activeStep={2}
+          styleConfig={{
+            activeBgColor: "#2b7cff",
+            activeTextColor: "#fff",
+            inactiveBgColor: "#fff",
+            inactiveTextColor: "#2b7cff",
+            completedBgColor: "#fff",
+            completedTextColor: "#2b7cff",
+            size: "3em",
+          }}
+          className={"stepper"}
+          stepClassName={"stepper__step"}
+        />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
